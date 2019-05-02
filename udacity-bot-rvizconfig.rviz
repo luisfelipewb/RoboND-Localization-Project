@@ -9,6 +9,8 @@ Panels:
         - /RobotModel1
         - /Camera1
         - /LaserScan1
+        - /Map1
+        - /PoseArray1
       Splitter Ratio: 0.5
     Tree Height: 391
   - Class: rviz/Selection
@@ -109,6 +111,8 @@ Visualization Manager:
       Visibility:
         Grid: true
         LaserScan: true
+        Map: true
+        PoseArray: true
         RobotModel: true
         Value: true
       Zoom Factor: 1
@@ -142,6 +146,32 @@ Visualization Manager:
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
+    - Alpha: 0.699999988
+      Class: rviz/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: true
+      Name: Map
+      Topic: /map
+      Unreliable: false
+      Use Timestamp: false
+      Value: true
+    - Alpha: 1
+      Arrow Length: 0.300000012
+      Axes Length: 0.300000012
+      Axes Radius: 0.00999999978
+      Class: rviz/PoseArray
+      Color: 255; 255; 0
+      Enabled: true
+      Head Length: 0.0700000003
+      Head Radius: 0.0299999993
+      Name: PoseArray
+      Shaft Length: 0.230000004
+      Shaft Radius: 0.00999999978
+      Shape: Arrow (Flat)
+      Topic: /particlecloud
+      Unreliable: false
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -167,25 +197,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 6.19771194
+      Distance: 0.64373225
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.138901666
-        Y: -0.461472183
-        Z: 0.241186365
+        X: 1.08854735
+        Y: 0.508054972
+        Z: 3.52229452
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.870397806
+      Pitch: 0.65479672
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 3.64856863
+      Yaw: 3.81356335
     Saved: ~
 Window Geometry:
   Camera:
@@ -205,5 +235,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1972
-  X: 2053
-  Y: 361
+  X: 3663
+  Y: 99
