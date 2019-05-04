@@ -1,0 +1,67 @@
+# Parameter explanation: http://wiki.ros.org/amcl
+
+#######################################
+###  Overall filter parameters      ###
+#######################################
+
+#~min_particles (int, default: 100)
+min_particles: 10
+#~max_particles (int, default: 5000)
+max_particles: 500
+#~kld_err (double, default: 0.01)
+#~kld_z (double, default: 0.99)
+#~update_min_d (double, default: 0.2 meters)
+update_min_d: 0.01
+#~update_min_a (double, default: π/6.0 radians)
+update_min_a: 0.01
+#~resample_interval (int, default: 2)
+resample_interval: 2
+#~transform_tolerance (double, default: 0.1 seconds)
+transform_tolerance: 0.2 #5 Hz
+#~recovery_alpha_slow (double, default: 0.0 (disabled))
+recovery_alpha_slow: 0.001
+#~recovery_alpha_fast (double, default: 0.0 (disabled))
+recovery_alpha_fast: 0.1 
+#~initial_pose_x (double, default: 0.0 meters)
+#~initial_pose_y (double, default: 0.0 meters)
+#~initial_pose_a (double, default: 0.0 radians)
+#~initial_cov_xx (double, default: 0.5*0.5 meters)
+#~initial_cov_yy (double, default: 0.5*0.5 meters)
+#~initial_cov_aa (double, default: (π/12)*(π/12) radian)
+#~gui_publish_rate (double, default: -1.0 Hz)
+#~save_pose_rate (double, default: 0.5 Hz)
+#~use_map_topic (bool, default: false)
+#~first_map_only (bool, default: false)
+
+#######################################
+###     Laser model parameters      ###
+#######################################
+#~laser_min_range (double, default: -1.0)
+#~laser_max_range (double, default: -1.0)
+#~laser_max_beams (int, default: 30)
+#~laser_z_hit (double, default: 0.95)
+#~laser_z_short (double, default: 0.1)
+#~laser_z_max (double, default: 0.05)
+#~laser_z_rand (double, default: 0.05)
+#~laser_sigma_hit (double, default: 0.2 meters)
+#~laser_lambda_short (double, default: 0.1)
+#~laser_likelihood_max_dist (double, default: 2.0 meters)
+#~laser_model_type (string, default: "likelihood_field")
+laser_model_type: likelihood_field
+
+#######################################
+###   Odometry model parameters     ###
+#######################################
+#~odom_model_type (string, default: "diff")
+odom_model_type: diff-corrected
+#~odom_alpha1 (double, default: 0.2)
+#~odom_alpha2 (double, default: 0.2)
+#~odom_alpha3 (double, default: 0.2)
+#~odom_alpha4 (double, default: 0.2)
+#~odom_alpha5 (double, default: 0.2)
+#~odom_frame_id (string, default: "odom")
+#~base_frame_id (string, default: "base_link")
+base_frame_id: robot_footprint
+#~global_frame_id (string, default: "map")
+#~tf_broadcast (bool, default: true)
+
