@@ -11,13 +11,13 @@ max_particles: 500
 #~kld_err (double, default: 0.01)
 #~kld_z (double, default: 0.99)
 #~update_min_d (double, default: 0.2 meters)
-update_min_d: 0.01
+update_min_d: 0.001
 #~update_min_a (double, default: π/6.0 radians)
-update_min_a: 0.01
+update_min_a: 0.001
 #~resample_interval (int, default: 2)
 resample_interval: 2
 #~transform_tolerance (double, default: 0.1 seconds)
-transform_tolerance: 0.2 #5 Hz
+transform_tolerance: 0.1 #10 Hz
 #~recovery_alpha_slow (double, default: 0.0 (disabled))
 recovery_alpha_slow: 0.001
 #~recovery_alpha_fast (double, default: 0.0 (disabled))

@@ -1,11 +1,11 @@
 # http://wiki.ros.org/base_local_planner
 
-controller_frequency: 5
+controller_frequency: 10
 
 TrajectoryPlannerROS:
   holonomic_robot: false
-  yaw_goal_tolerance:   0.1 # Default: 0.05
-  xy_goal_tolerance:    0.15 # Default: 0.10
+  yaw_goal_tolerance:   0.05 # Default: 0.05
+  xy_goal_tolerance:    0.1 # Default: 0.10
 
   meter_scoring: true # Default: false F:cells T:meters
   pdist_scale:  3.0 # Default: 0.6

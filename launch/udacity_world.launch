@@ -3,7 +3,8 @@
 <launch>
 
   <!--include robot description launch file-->
-  <include file="$(find udacity_bot)/launch/robot_description.launch"/>
+  <!--include file="$(find udacity_bot)/launch/robot_description.launch"/-->
+  <include file="$(find udacity_bot)/launch/r2d2_description.launch"/>
 
   <arg name="world" default="empty"/> 
   <arg name="paused" default="false"/>
