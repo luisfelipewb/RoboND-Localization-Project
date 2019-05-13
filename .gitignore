@@ -1,0 +1,7 @@
+# Latex report #
+######################
+*.aux
+*.bbl
+*.blg
+*.log
+*.gz

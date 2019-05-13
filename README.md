@@ -57,9 +57,11 @@ Planned path is followed and obtacles are avoided. The simulated robots can reac
 
 ### Bloopers
 ![alt text](./report/img/r2d2_blooper1.png "Stuck")
+
 AMCL not converging. Robot starting off the wrong direction and getting stuck too close to the wall.
 
 
 ![alt text](./report/img/r2d2_blooper2.png "WrongModel")
+
 Misplacing the decimal point in the caster (sphere radius) when designing the roobot.
 
